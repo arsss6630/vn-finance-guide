@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKX Việt Nam 2024 - Hướng Dẫn Đăng Ký & Giao Dịch Chi Tiết</title>
+    <meta name="description" content="Hướng dẫn đăng ký và sử dụng sàn OKX tại Việt Nam. Cách mua Bitcoin, giao dịch Futures, và rút tiền VND trên OKX an toàn nhất.">
+    <meta name="keywords" content="OKX Việt Nam, đăng ký OKX, hướng dẫn OKX, mua Bitcoin OKX, OKX P2P Vietnam">
+    <link rel="canonical" href="https://huongdancrypto.xyz/okx.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #0B0E11;
+            color: #EAECEF;
+            line-height: 1.7;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1E2329 0%, #0B0E11 100%);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #2B3139;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #F0B90B;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #EAECEF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #F0B90B;
+        }
+
+        .hero {
+            padding: 120px 20px 60px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0B0E11 100%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #848E9C;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #9D6FFF 0%, #7C7FFF 100%);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #8B5CF6;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2B3139;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            color: #EAECEF;
+            margin: 25px 0 15px;
+        }
+
+        .section p {
+            color: #B7BDC6;
+            margin-bottom: 15px;
+        }
+
+        .step-box {
+            background: #1E2329;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #8B5CF6;
+        }
+
+        .step-box h4 {
+            color: #8B5CF6;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .step-box p {
+            color: #B7BDC6;
+            margin: 0;
+        }
+
+        .step-box ul {
+            color: #B7BDC6;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .step-box li {
+            margin-bottom: 8px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #2D3A29 0%, #1E2329 100%);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #3D5A3D;
+        }
+
+        .info-box.warning {
+            background: linear-gradient(135deg, #3A2D29 0%, #1E2329 100%);
+            border-color: #5A3D3D;
+        }
+
+        .info-box h4 {
+            color: #4ADE80;
+            margin-bottom: 10px;
+        }
+
+        .info-box.warning h4 {
+            color: #FCA5A5;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: #1E2329;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .feature-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            color: #EAECEF;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #848E9C;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #2B3139;
+        }
+
+        .comparison-table th {
+            background: #1E2329;
+            color: #8B5CF6;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            color: #B7BDC6;
+        }
+
+        .comparison-table tr:hover {
+            background: #1E2329;
+        }
+
+        .faq-item {
+            background: #1E2329;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #EAECEF;
+        }
+
+        .faq-question:hover {
+            background: #2B3139;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: #B7BDC6;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .footer {
+            background: #1E2329;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #2B3139;
+        }
+
+        .footer p {
+            color: #848E9C;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #8B5CF6;
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            padding: 100px 20px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb a {
+            color: #848E9C;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: #8B5CF6;
+        }
+
+        .breadcrumb span {
+            color: #EAECEF;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="/" class="logo">HuongDanCrypto</a>
+            <ul class="nav-links">
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/binance.html">Binance</a></li>
+                <li><a href="/okx.html">OKX</a></li>
+                <li><a href="/huong-dan-mua-bitcoin.html">Mua Bitcoin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="/">Trang chủ</a> &gt; <span>OKX Việt Nam</span>
+    </div>
+
+    <section class="hero">
+        <h1>Hướng Dẫn Sử Dụng OKX Tại Việt Nam 2024</h1>
+        <p>OKX là sàn giao dịch tiền điện tử top 3 thế giới với công nghệ tiên tiến, phí thấp và nhiều sản phẩm đa dạng. Hướng dẫn chi tiết từ A-Z cho người mới.</p>
+        <a href="https://www.okx.com/join/YOUR_REF_ID" class="cta-button" target="_blank" rel="noopener">Đăng Ký OKX - Thưởng 50 USDT</a>
+    </section>
+
+    <div class="container">
+        <section class="section">
+            <h2>OKX Là Gì?</h2>
+            <p>OKX (trước đây là OKEx) được thành lập năm 2017, là một trong những sàn giao dịch tiền điện tử lớn nhất thế giới. OKX nổi tiếng với nền tảng giao dịch Futures mạnh mẽ, Web3 Wallet tích hợp, và nhiều sản phẩm DeFi.</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h4>Top 3 Sàn Thế Giới</h4>
+                    <p>Hơn 50 triệu người dùng, khối lượng giao dịch hàng tỷ USD mỗi ngày</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💎</div>
+                    <h4>Phí Cực Thấp</h4>
+                    <p>Phí giao dịch Spot chỉ 0.08%, Futures 0.02%</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌐</div>
+                    <h4>Web3 Wallet</h4>
+                    <p>Ví phi tập trung tích hợp, truy cập DeFi, NFT dễ dàng</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📱</div>
+                    <h4>App Đẹp & Mạnh</h4>
+                    <p>Giao diện hiện đại, đầy đủ tính năng, dễ sử dụng</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>So Sánh OKX vs Binance</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Tiêu chí</th>
+                    <th>OKX</th>
+                    <th>Binance</th>
+                </tr>
+                <tr>
+                    <td>Phí Spot</td>
+                    <td>0.08%</td>
+                    <td>0.1%</td>
+                </tr>
+                <tr>
+                    <td>Phí Futures</td>
+                    <td>0.02%/0.05%</td>
+                    <td>0.02%/0.04%</td>
+                </tr>
+                <tr>
+                    <td>Đòn bẩy tối đa</td>
+                    <td>125x</td>
+                    <td>125x</td>
+                </tr>
+                <tr>
+                    <td>Web3 Wallet</td>
+                    <td>Tích hợp sẵn</td>
+                    <td>Cần tải riêng</td>
+                </tr>
+                <tr>
+                    <td>P2P VND</td>
+                    <td>Có</td>
+                    <td>Có</td>
+                </tr>
+                <tr>
+                    <td>Copy Trading</td>
+                    <td>Có</td>
+                    <td>Có</td>
+                </tr>
+            </table>
+            <p>OKX có ưu thế về phí giao dịch thấp hơn và Web3 Wallet tích hợp mạnh mẽ. Binance có thanh khoản cao hơn và nhiều người dùng hơn.</p>
+        </section>
+
+        <section class="section">
+            <h2>Hướng Dẫn Đăng Ký Tài Khoản OKX</h2>
+
+            <div class="step-box">
+                <h4>Bước 1: Truy Cập Link Đăng Ký</h4>
+                <p>Truy cập: <a href="https://www.okx.com/join/YOUR_REF_ID" style="color: #8B5CF6;" target="_blank" rel="noopener">www.okx.com/join</a></p>
+                <p>Sử dụng link giới thiệu để nhận thưởng lên đến 50 USDT cho người mới.</p>
+            </div>
+
+            <div class="step-box">
+                <h4>Bước 2: Điền Thông Tin</h4>
+                <ul>
+                    <li>Chọn đăng ký bằng Email hoặc Số điện thoại</li>
+                    <li>Nhập email/số điện thoại hợp lệ</li>
+                    <li>Tạo mật khẩu mạnh (8-32 ký tự, có chữ hoa, thường, số)</li>
+                    <li>Đồng ý điều khoản sử dụng</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Bước 3: Xác Minh OTP</h4>
+                <p>OKX gửi mã xác minh 6 số qua email/SMS. Nhập mã trong vòng 10 phút để hoàn tất đăng ký.</p>
+            </div>
+
+            <div class="step-box">
+                <h4>Bước 4: Thiết Lập Bảo Mật</h4>
+                <ul>
+                    <li>Bật Google Authenticator 2FA</li>
+                    <li>Thiết lập mã PIN giao dịch</li>
+                    <li>Thêm số điện thoại xác minh (nếu đăng ký bằng email)</li>
+                    <li>Kích hoạt Anti-Phishing Code</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>💡 Anti-Phishing Code là gì?</h4>
+                <p>Đây là mã bí mật do bạn tự đặt, sẽ xuất hiện trong mọi email từ OKX. Nếu email không có mã này, đó là email lừa đảo. Tính năng này giúp bảo vệ bạn khỏi các cuộc tấn công phishing.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Xác Minh KYC Trên OKX</h2>
+            <p>OKX yêu cầu xác minh danh tính để mở khóa đầy đủ tính năng giao dịch.</p>
+
+            <h3>Các Cấp Độ Xác Minh</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Cấp độ</th>
+                    <th>Yêu cầu</th>
+                    <th>Giới hạn rút</th>
+                </tr>
+                <tr>
+                    <td>Level 1</td>
+                    <td>Thông tin cơ bản</td>
+                    <td>10 BTC/ngày</td>
+                </tr>
+                <tr>
+                    <td>Level 2</td>
+                    <td>CMND + Selfie</td>
+                    <td>200 BTC/ngày</td>
+                </tr>
+                <tr>
+                    <td>Level 3</td>
+                    <td>Xác minh địa chỉ</td>
+                    <td>500 BTC/ngày</td>
+                </tr>
+            </table>
+
+            <div class="step-box">
+                <h4>Quy Trình Xác Minh Level 2</h4>
+                <ul>
+                    <li>Vào Profile > Verification</li>
+                    <li>Chọn Individual Verification</li>
+                    <li>Chọn quốc gia: Vietnam</li>
+                    <li>Chọn loại giấy tờ: ID Card (CMND/CCCD)</li>
+                    <li>Chụp ảnh mặt trước và mặt sau</li>
+                    <li>Chụp selfie theo hướng dẫn</li>
+                    <li>Chờ phê duyệt (10-30 phút)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Cách Nạp Tiền VND Vào OKX</h2>
+
+            <div class="step-box">
+                <h4>Phương Thức 1: P2P Trading (Khuyên Dùng)</h4>
+                <ul>
+                    <li>Vào Buy Crypto > P2P Trading</li>
+                    <li>Chọn Buy > USDT > VND</li>
+                    <li>Chọn phương thức thanh toán (Bank Transfer, Momo)</li>
+                    <li>Chọn người bán uy tín (có badge Merchant)</li>
+                    <li>Đặt lệnh và chuyển khoản</li>
+                    <li>Xác nhận đã chuyển tiền, chờ nhận crypto</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Phương Thức 2: Express Buy</h4>
+                <ul>
+                    <li>Vào Buy Crypto > Express</li>
+                    <li>Chọn loại crypto và số tiền</li>
+                    <li>Chọn phương thức thanh toán</li>
+                    <li>OKX sẽ tự động match với người bán</li>
+                    <li>Thanh toán và nhận crypto nhanh chóng</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>💡 Mẹo Mua P2P Giá Tốt</h4>
+                <p>So sánh tỷ giá giữa nhiều người bán. Giao dịch vào buổi sáng (9-11h) hoặc tối (20-22h) thường có nhiều người bán online và tỷ giá cạnh tranh hơn.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Giao Dịch Futures Trên OKX</h2>
+            <p>OKX nổi tiếng với nền tảng giao dịch Futures mạnh mẽ, đa dạng loại hợp đồng.</p>
+
+            <h3>Các Loại Futures Trên OKX</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">📈</div>
+                    <h4>USDT-M Futures</h4>
+                    <p>Ký quỹ bằng USDT, dễ tính toán lãi/lỗ, phù hợp người mới</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💰</div>
+                    <h4>Coin-M Futures</h4>
+                    <p>Ký quỹ bằng coin gốc (BTC, ETH), cho trader chuyên nghiệp</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⏱️</div>
+                    <h4>Perpetual Swap</h4>
+                    <p>Hợp đồng vĩnh cửu, không có ngày đáo hạn</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📅</div>
+                    <h4>Delivery Futures</h4>
+                    <p>Hợp đồng có kỳ hạn, thanh toán theo quý</p>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <h4>⚠️ Cảnh Báo Rủi Ro</h4>
+                <p>Giao dịch Futures có đòn bẩy, có thể mất toàn bộ vốn. Người mới nên bắt đầu với đòn bẩy thấp (2-5x) và chỉ dùng số tiền có thể chấp nhận mất. Luôn đặt Stop Loss!</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>OKX Web3 Wallet</h2>
+            <p>OKX tích hợp sẵn ví Web3 phi tập trung, cho phép bạn truy cập DeFi, NFT mà không cần cài thêm ứng dụng.</p>
+
+            <div class="step-box">
+                <h4>Tính Năng Nổi Bật</h4>
+                <ul>
+                    <li><strong>Multi-chain:</strong> Hỗ trợ 70+ blockchain (Ethereum, BSC, Polygon, Solana...)</li>
+                    <li><strong>DEX Aggregator:</strong> So sánh giá từ 200+ DEX, swap tỷ giá tốt nhất</li>
+                    <li><strong>NFT Marketplace:</strong> Mua bán NFT trên nhiều chain</li>
+                    <li><strong>DeFi Dashboard:</strong> Quản lý tài sản DeFi tập trung</li>
+                    <li><strong>Earn:</strong> Staking, Lending ngay trong ví</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Cách Kích Hoạt Web3 Wallet</h4>
+                <ul>
+                    <li>Mở app OKX, chọn tab "Web3"</li>
+                    <li>Nhấn "Create Wallet" hoặc "Import"</li>
+                    <li>Lưu lại Seed Phrase (12 từ) ở nơi an toàn</li>
+                    <li>Đặt mật khẩu ví</li>
+                    <li>Bắt đầu khám phá thế giới Web3!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Phí Giao Dịch OKX</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Loại phí</th>
+                    <th>Maker</th>
+                    <th>Taker</th>
+                </tr>
+                <tr>
+                    <td>Spot Trading</td>
+                    <td>0.08%</td>
+                    <td>0.1%</td>
+                </tr>
+                <tr>
+                    <td>USDT-M Futures</td>
+                    <td>0.02%</td>
+                    <td>0.05%</td>
+                </tr>
+                <tr>
+                    <td>Coin-M Futures</td>
+                    <td>0.02%</td>
+                    <td>0.05%</td>
+                </tr>
+                <tr>
+                    <td>P2P Trading</td>
+                    <td colspan="2">Miễn phí</td>
+                </tr>
+            </table>
+            <p>Phí có thể giảm thêm dựa trên khối lượng giao dịch 30 ngày hoặc số dư OKB (token của sàn).</p>
+        </section>
+
+        <section class="section">
+            <h2>Câu Hỏi Thường Gặp</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    OKX có uy tín không?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>OKX là sàn giao dịch top 3 thế giới, hoạt động từ 2017 với hơn 50 triệu người dùng. OKX có giấy phép hoạt động tại nhiều quốc gia và chưa từng bị hack lớn. Tuy nhiên, luôn nhớ "Not your keys, not your coins" - chỉ giữ số tiền cần giao dịch trên sàn.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Nên dùng OKX hay Binance?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Cả hai đều là sàn uy tín. OKX có phí thấp hơn và Web3 Wallet tốt hơn. Binance có thanh khoản cao hơn và nhiều người Việt dùng hơn. Nhiều trader dùng cả hai để tận dụng ưu điểm của mỗi sàn.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    OKX có hỗ trợ tiếng Việt không?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Có, OKX có giao diện tiếng Việt đầy đủ. Vào Settings > Language > Tiếng Việt để đổi ngôn ngữ.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Cách rút tiền về Việt Nam?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sử dụng P2P Trading, chọn Sell USDT > VND. Người mua sẽ chuyển khoản VND vào tài khoản ngân hàng của bạn. Chỉ xác nhận release crypto sau khi đã nhận đủ tiền.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    OKB là gì?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>OKB là token của sàn OKX, tương tự BNB của Binance. Giữ OKB để được giảm phí giao dịch, tham gia Jumpstart (IEO), và nhiều quyền lợi khác.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center; padding: 40px; background: linear-gradient(135deg, #1a1a2e 0%, #1E2329 100%); border-radius: 16px;">
+            <h2 style="border: none; padding: 0; color: #fff;">Bắt Đầu Với OKX Ngay Hôm Nay</h2>
+            <p style="margin: 20px 0;">Đăng ký và nhận thưởng lên đến 50 USDT cho người dùng mới</p>
+            <a href="https://www.okx.com/join/YOUR_REF_ID" class="cta-button" target="_blank" rel="noopener">Đăng Ký OKX Ngay</a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 HuongDanCrypto.xyz - Hướng dẫn tiền điện tử tại Việt Nam</p>
+        <p style="margin-top: 10px;"><a href="/">Trang chủ</a> | <a href="/binance.html">Binance</a> | <a href="/okx.html">OKX</a></p>
+        <p style="margin-top: 15px; font-size: 0.8rem;">Cảnh báo rủi ro: Giao dịch tiền điện tử có rủi ro cao. Hãy tìm hiểu kỹ trước khi đầu tư.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+                const span = question.querySelector('span');
+                span.textContent = item.classList.contains('active') ? '−' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
