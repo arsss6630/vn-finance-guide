@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Crypto - Cách Mua Bitcoin & Tiền Điện Tử Tại Việt Nam 2025</title>
+    <meta name="description" content="Hướng dẫn chi tiết cách mua Bitcoin, đăng ký Binance, nạp tiền và giao dịch tiền điện tử tại Việt Nam. Dành cho người mới bắt đầu.">
+    <meta name="keywords" content="cách mua bitcoin, đăng ký binance, tiền điện tử việt nam, crypto vietnam, hướng dẫn binance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://huongdancrypto.xyz/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hướng Dẫn Crypto - Mua Bitcoin Tại Việt Nam">
+    <meta property="og:description" content="Hướng dẫn chi tiết cách mua Bitcoin và giao dịch tiền điện tử tại Việt Nam 2025">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huongdancrypto.xyz/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>₿</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #F0B90B;
+            --primary-dark: #C99A09;
+            --bg-dark: #0B0E11;
+            --bg-card: #1E2329;
+            --bg-card-hover: #2B3139;
+            --text-primary: #EAECEF;
+            --text-secondary: #848E9C;
+            --success: #0ECB81;
+            --danger: #F6465D;
+            --gradient: linear-gradient(135deg, #F0B90B 0%, #F8D12F 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: rgba(11, 14, 17, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #2B3139;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background: var(--gradient);
+            color: var(--bg-dark);
+            padding: 0.6rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(240, 185, 11, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            background: radial-gradient(ellipse at top, rgba(240, 185, 11, 0.1) 0%, transparent 60%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--bg-dark);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(240, 185, 11, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid var(--primary);
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(240, 185, 11, 0.1);
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 2rem;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid #2B3139;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Exchange Comparison */
+        .exchange-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .exchange-table th,
+        .exchange-table td {
+            padding: 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid #2B3139;
+        }
+
+        .exchange-table th {
+            background: #2B3139;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .exchange-table tr:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .exchange-name {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+        }
+
+        .exchange-logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--bg-dark);
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-success {
+            background: rgba(14, 203, 129, 0.2);
+            color: var(--success);
+        }
+
+        .badge-warning {
+            background: rgba(240, 185, 11, 0.2);
+            color: var(--primary);
+        }
+
+        .register-btn {
+            background: var(--gradient);
+            color: var(--bg-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .register-btn:hover {
+            box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+        }
+
+        /* Steps */
+        .steps {
+            counter-reset: step;
+        }
+
+        .step {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #2B3139;
+            position: relative;
+            padding-left: 5rem;
+        }
+
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 1.5rem;
+            top: 2rem;
+            width: 48px;
+            height: 48px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--bg-dark);
+        }
+
+        .step h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .step p {
+            color: var(--text-secondary);
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid #2B3139;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .faq-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient);
+            border-radius: 24px;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--bg-dark);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: rgba(11, 14, 17, 0.7);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-section .btn-dark {
+            background: var(--bg-dark);
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .cta-section .btn-dark:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #1E2329;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid #2B3139;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .footer-col a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid #2B3139;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .disclaimer {
+            background: rgba(246, 70, 93, 0.1);
+            border: 1px solid rgba(246, 70, 93, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .stats {
+                gap: 2rem;
+            }
+
+            .stat-value {
+                font-size: 1.75rem;
+            }
+
+            .step {
+                padding-left: 1.5rem;
+                padding-top: 4rem;
+            }
+
+            .step::before {
+                top: 1rem;
+                left: 1.5rem;
+            }
+
+            .exchange-table {
+                font-size: 0.85rem;
+            }
+
+            .exchange-table th,
+            .exchange-table td {
+                padding: 0.75rem;
+            }
+        }
+
+        /* Mobile menu */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-dark);
+                flex-direction: column;
+                padding: 1rem;
+                border-bottom: 1px solid #2B3139;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .header-content {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .cta-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">₿</span>
+                Hướng Dẫn Crypto
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="nav">
+                <a href="#huong-dan">Hướng Dẫn</a>
+                <a href="#san-giao-dich">Sàn Giao Dịch</a>
+                <a href="#cach-mua">Cách Mua</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" class="cta-btn" target="_blank" rel="noopener">Đăng Ký Binance</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hướng Dẫn Mua Bitcoin & Crypto Tại Việt Nam</h1>
+        <p>Hướng dẫn chi tiết từ A-Z cách mua Bitcoin, đăng ký tài khoản, nạp tiền và giao dịch tiền điện tử an toàn tại Việt Nam năm 2025.</p>
+        <div class="hero-btns">
+            <a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" class="btn-primary" target="_blank" rel="noopener">
+                🚀 Đăng Ký Binance Ngay
+            </a>
+            <a href="#cach-mua" class="btn-secondary">Xem Hướng Dẫn</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">18.6M</div>
+                <div class="stat-label">Người dùng crypto tại VN</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">21%</div>
+                <div class="stat-label">Dân số sở hữu crypto</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">#5</div>
+                <div class="stat-label">Xếp hạng toàn cầu</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Guides Section -->
+        <section id="huong-dan">
+            <h2 class="section-title">Hướng Dẫn Cho Người Mới</h2>
+            <p class="section-desc">Bắt đầu hành trình đầu tư crypto của bạn với các hướng dẫn chi tiết dưới đây.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3>Đăng Ký Tài Khoản</h3>
+                    <p>Hướng dẫn đăng ký tài khoản Binance từng bước với hình ảnh minh họa chi tiết.</p>
+                    <a href="#cach-mua" class="card-link">Xem chi tiết →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>Xác Minh Danh Tính (KYC)</h3>
+                    <p>Cách hoàn thành KYC nhanh chóng để mở khóa đầy đủ tính năng giao dịch.</p>
+                    <a href="#cach-mua" class="card-link">Xem chi tiết →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Nạp Tiền VNĐ</h3>
+                    <p>Các phương thức nạp tiền VNĐ vào sàn: P2P, chuyển khoản, thẻ tín dụng.</p>
+                    <a href="#cach-mua" class="card-link">Xem chi tiết →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">₿</div>
+                    <h3>Mua Bitcoin Đầu Tiên</h3>
+                    <p>Hướng dẫn mua Bitcoin và các loại tiền điện tử phổ biến khác.</p>
+                    <a href="#cach-mua" class="card-link">Xem chi tiết →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Bảo Mật Tài Khoản</h3>
+                    <p>Thiết lập 2FA, mật khẩu mạnh và các biện pháp bảo mật quan trọng.</p>
+                    <a href="#faq" class="card-link">Xem chi tiết →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Rút Tiền Về VNĐ</h3>
+                    <p>Cách bán crypto và rút tiền về tài khoản ngân hàng Việt Nam.</p>
+                    <a href="#faq" class="card-link">Xem chi tiết →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exchange Comparison -->
+        <section id="san-giao-dich">
+            <h2 class="section-title">So Sánh Sàn Giao Dịch</h2>
+            <p class="section-desc">Các sàn giao dịch uy tín hỗ trợ người dùng Việt Nam với VNĐ.</p>
+
+            <div style="overflow-x: auto;">
+                <table class="exchange-table">
+                    <thead>
+                        <tr>
+                            <th>Sàn Giao Dịch</th>
+                            <th>Phí Giao Dịch</th>
+                            <th>Hỗ Trợ VNĐ</th>
+                            <th>Ưu Điểm</th>
+                            <th>Đăng Ký</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="exchange-name">
+                                    <span class="exchange-logo">B</span>
+                                    Binance
+                                </div>
+                            </td>
+                            <td>0.1%</td>
+                            <td><span class="badge badge-success">P2P</span></td>
+                            <td>Sàn lớn nhất thế giới, thanh khoản cao</td>
+                            <td><a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" class="register-btn" target="_blank" rel="noopener">Đăng Ký</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="exchange-name">
+                                    <span class="exchange-logo" style="background: #000;">O</span>
+                                    OKX
+                                </div>
+                            </td>
+                            <td>0.1%</td>
+                            <td><span class="badge badge-success">P2P</span></td>
+                            <td>Giao diện thân thiện, nhiều coin</td>
+                            <td><a href="https://www.okx.com/join/YOUR_REF_ID" class="register-btn" target="_blank" rel="noopener">Đăng Ký</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="exchange-name">
+                                    <span class="exchange-logo" style="background: #FF6600;">By</span>
+                                    Bybit
+                                </div>
+                            </td>
+                            <td>0.1%</td>
+                            <td><span class="badge badge-success">P2P</span></td>
+                            <td>Tốt cho giao dịch phái sinh</td>
+                            <td><a href="https://www.bybit.com/invite?ref=YOUR_REF_ID" class="register-btn" target="_blank" rel="noopener">Đăng Ký</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="exchange-name">
+                                    <span class="exchange-logo" style="background: #00D9A5;">Bg</span>
+                                    Bitget
+                                </div>
+                            </td>
+                            <td>0.1%</td>
+                            <td><span class="badge badge-success">P2P</span></td>
+                            <td>Copy trading tốt nhất</td>
+                            <td><a href="https://www.bitget.com/referral/register?ref=YOUR_REF_ID" class="register-btn" target="_blank" rel="noopener">Đăng Ký</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="exchange-name">
+                                    <span class="exchange-logo" style="background: #2354E6;">Re</span>
+                                    Remitano
+                                </div>
+                            </td>
+                            <td>1%</td>
+                            <td><span class="badge badge-success">Trực tiếp</span></td>
+                            <td>Dành riêng cho VN, dễ dùng</td>
+                            <td><a href="https://remitano.com/btc/vn/join/YOUR_REF_ID" class="register-btn" target="_blank" rel="noopener">Đăng Ký</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- How to Buy -->
+        <section id="cach-mua">
+            <h2 class="section-title">Cách Mua Bitcoin Từng Bước</h2>
+            <p class="section-desc">Hướng dẫn chi tiết mua Bitcoin trên Binance - sàn giao dịch lớn nhất thế giới.</p>
+
+            <div class="steps">
+                <div class="step">
+                    <h3>Đăng Ký Tài Khoản Binance</h3>
+                    <p>Truy cập <a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" target="_blank" rel="noopener" style="color: var(--primary);">Binance.com</a>, nhập email và mật khẩu. Xác nhận email để kích hoạt tài khoản. Quá trình chỉ mất 1-2 phút.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Xác Minh Danh Tính (KYC)</h3>
+                    <p>Vào Cài đặt → Xác minh danh tính. Chuẩn bị CMND/CCCD hoặc Hộ chiếu. Chụp ảnh giấy tờ và selfie theo hướng dẫn. Thời gian duyệt: 5-30 phút.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Bật Bảo Mật 2FA</h3>
+                    <p>Tải app Google Authenticator hoặc Binance Authenticator. Quét mã QR để liên kết. Lưu mã backup ở nơi an toàn. Đây là bước bắt buộc để bảo vệ tài sản.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Nạp Tiền VNĐ Qua P2P</h3>
+                    <p>Vào Mua Crypto → P2P Trading. Chọn mua USDT bằng VNĐ. Chọn người bán có đánh giá cao (>95%). Chuyển khoản theo thông tin và xác nhận. USDT sẽ về tài khoản trong vài phút.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Mua Bitcoin</h3>
+                    <p>Vào Trade → Spot. Tìm cặp BTC/USDT. Nhập số lượng USDT muốn dùng để mua BTC. Nhấn "Mua BTC". Xong! Bitcoin đã thuộc về bạn.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" class="btn-primary" target="_blank" rel="noopener">
+                    🎁 Đăng Ký Binance - Giảm 20% Phí
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+            <p class="section-desc">Giải đáp các thắc mắc phổ biến về mua bán tiền điện tử tại Việt Nam.</p>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Mua bán Bitcoin có hợp pháp tại Việt Nam không?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Hiện tại, Việt Nam chưa có khung pháp lý rõ ràng cho tiền điện tử. Bitcoin không bị cấm nhưng cũng chưa được công nhận là phương tiện thanh toán hợp pháp. Bạn có thể mua bán như một loại tài sản đầu tư, nhưng cần tự chịu trách nhiệm về rủi ro.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Binance có an toàn không?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Binance là sàn giao dịch lớn nhất thế giới với hơn 200 triệu người dùng. Sàn có quỹ bảo hiểm SAFU trị giá 1 tỷ USD để bảo vệ tài sản người dùng. Tuy nhiên, bạn nên bật 2FA và không để quá nhiều tiền trên sàn.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Cần bao nhiêu tiền để bắt đầu?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Bạn có thể bắt đầu với số tiền nhỏ từ 100.000 - 500.000 VNĐ. Binance P2P cho phép giao dịch tối thiểu khoảng 100.000 VNĐ. Đầu tư nhỏ trước để làm quen, sau đó tăng dần khi đã hiểu rõ.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Làm sao để rút tiền về VNĐ?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Bán Bitcoin/crypto của bạn lấy USDT. Vào P2P → Bán USDT. Chọn người mua uy tín, họ sẽ chuyển khoản VNĐ vào tài khoản ngân hàng của bạn. Sau khi nhận tiền, xác nhận giao dịch để giải phóng USDT cho người mua.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Nên mua Bitcoin hay coin khác?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Với người mới, khuyến nghị bắt đầu với Bitcoin (BTC) hoặc Ethereum (ETH) vì đây là 2 đồng coin lớn nhất, ít biến động hơn altcoin. Tránh các đồng coin mới, "shitcoin" vì rủi ro mất tiền rất cao.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    KYC có bắt buộc không?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Có, hầu hết các sàn uy tín đều yêu cầu KYC để tuân thủ quy định chống rửa tiền. KYC giúp bảo vệ tài khoản của bạn và mở khóa đầy đủ tính năng như nạp/rút tiền, giao dịch P2P.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Bắt Đầu Đầu Tư Crypto Ngay Hôm Nay</h2>
+            <p>Đăng ký Binance qua link dưới đây để nhận ưu đãi giảm 20% phí giao dịch vĩnh viễn!</p>
+            <a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" class="btn-dark" target="_blank" rel="noopener">
+                🚀 Đăng Ký Binance Miễn Phí
+            </a>
+        </section>
+
+        <div class="disclaimer">
+            <strong>⚠️ Cảnh báo rủi ro:</strong> Đầu tư tiền điện tử có rủi ro cao. Giá có thể biến động mạnh và bạn có thể mất toàn bộ số tiền đầu tư. Chỉ đầu tư số tiền bạn có thể chấp nhận mất. Nội dung trên website chỉ mang tính chất tham khảo, không phải lời khuyên đầu tư. Pháp luật Việt Nam hiện chưa công nhận tiền ảo như một phương thức thanh toán hợp pháp.
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Hướng Dẫn Crypto</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Website hướng dẫn mua bán tiền điện tử dành cho người Việt Nam. Cập nhật kiến thức crypto mới nhất 2025.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hướng Dẫn</h4>
+                <a href="#cach-mua">Cách mua Bitcoin</a>
+                <a href="#cach-mua">Đăng ký Binance</a>
+                <a href="#cach-mua">Xác minh KYC</a>
+                <a href="#cach-mua">Nạp tiền P2P</a>
+            </div>
+            <div class="footer-col">
+                <h4>Sàn Giao Dịch</h4>
+                <a href="https://accounts.binance.com/register?ref=YOUR_REF_ID" target="_blank" rel="noopener">Binance</a>
+                <a href="https://www.okx.com/join/YOUR_REF_ID" target="_blank" rel="noopener">OKX</a>
+                <a href="https://www.bybit.com/invite?ref=YOUR_REF_ID" target="_blank" rel="noopener">Bybit</a>
+                <a href="https://www.bitget.com/referral/register?ref=YOUR_REF_ID" target="_blank" rel="noopener">Bitget</a>
+            </div>
+            <div class="footer-col">
+                <h4>Tài Nguyên</h4>
+                <a href="#faq">Câu hỏi thường gặp</a>
+                <a href="#san-giao-dich">So sánh sàn</a>
+                <a href="#">Liên hệ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Hướng Dẫn Crypto. Website chỉ mang tính chất tham khảo, không phải lời khuyên đầu tư.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.getElementById('nav').classList.toggle('active');
+        }
+
+        // FAQ toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- 51.la 统计代码 - 待添加 -->
+</body>
+</html>
